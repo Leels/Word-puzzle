@@ -1,5 +1,8 @@
-$(document).ready(function(){
-  $("form#formOne").submit(function(event){
+//String Input: "Believe you can and you're halfway there. Theodore Roosevelt"
+//Puzzle Output: "B-l--v- y-- c-n -nd y--'r- h-lfw-y th-r-. Th--d-r- R--s-v-lt"
+
+$("form#formOne").submit(function(event){
+  $(document).ready(function(){
     event.preventDefault();
 
     const puzzleInput = $("input#puzzleString").val();
